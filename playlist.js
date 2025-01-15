@@ -1,4 +1,4 @@
- // Crear secciones dinámicamente
+  // Crear secciones dinámicamente
   temporadas.forEach(temporada => {
     const seccion = document.createElement('div');
     seccion.className = 'codigo';
@@ -12,7 +12,7 @@
       link.href = `${baseLink}${ep.video}&titulo=${encodeURIComponent(ep.titulo)}&poster=${encodeURIComponent(ep.poster)}&temporada=${temporada.id}`;
       link.className = 'recuadro';
       link.innerHTML = `
-        <img class="imagen" src="${ep.poster}" onerror="this.onerror=null;this.src='https://image.tmdb.org/t/p/original${datosDos.backdrop_path}';" alt="Imagen">
+        <img class="imagen" src="${ep.poster}" onerror="this.onerror=null;this.src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKDDgO2rryw9kgdZiA5OhxXMptjvSpObaQ3dFK376E1TptRyUG_gFYvJ799-Pp1fqnQ-TrvJyNUqLrVN1IYvVrjD1wW6TVWDTHKJR38LJD73dssCwMNtTnVvWNnR7YRsxmmFh5rHkhvnUr5W7GeRuuLKsF0xRk2jUswyuwsQbAExOTD-wEOivyNRkMjY7e/s1080/WhatsApp%20Image%202025-01-09%20at%203.51.09%20AM.jpeg';" alt="Imagen">
         <p class="texto-blancto texto-negritra">${ep.texto}</p>
         <div class="pequeno-recuadro">${ep.numero}</div>
         <div class="visto">
